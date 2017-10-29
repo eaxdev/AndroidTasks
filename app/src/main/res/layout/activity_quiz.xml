@@ -8,9 +8,9 @@
     tools:context="ru.learning.geoquiz.QuizActivity">
 
     <TextView
+        android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/question_text"
         android:padding="24dp" />
 
     <LinearLayout
@@ -32,6 +32,30 @@
             android:text="@string/false_button"
             tools:ignore="ButtonStyle" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/arrow_left"
+            android:text="@string/next_button"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="@string/next_button"
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
 
 
